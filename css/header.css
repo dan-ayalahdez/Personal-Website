@@ -1,0 +1,73 @@
+:root {
+    --fs-nav-links: 0.8rem;
+
+    --fs-title: 4.5rem;
+
+    --ff-general:'Raleway', sans-serif;
+
+    --fw-regular: 400;
+    --fw-semi: 600;
+    --fw-bold: 800;
+}
+/* Utility Classes For the Header */
+.header-container {
+    --max-width: 1350px;
+    --padding: 2rem;
+
+    max-width: min(var(--max-width),100% - (var(--padding)*2));
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1rem;
+    border-bottom: 3px dotted black;
+}
+
+.title {
+    font-size: var(--fs-title);
+    font-weight: var(--fw-bold);
+    text-align: center;
+}
+
+.navbar-link {
+    font-size: var(--fs-nav-links);
+    font-weight: var(--fw-semi);
+    text-decoration: none;
+    color: black;
+    transition: color ease-out 0.3s;
+}
+
+/* General Styling */
+
+.nav-list {
+    display: flex;
+    gap: 1.7rem;
+    padding-block: 1rem;
+}
+
+.navbar-link:hover {
+    color: rgb(33, 20, 218);
+}
+
+.navbar-link:visited {
+    color: black;
+}
+
+
+@media (min-width: 50em) {
+    :root {
+        --fs-nav-links: 1.2rem;
+        --fs-title: 3.5rem;
+    }
+
+    .header-container {
+    --padding:1rem;
+    flex-direction: row;
+    }
+
+    .nav-list {
+        gap: 2.5rem;
+    }
+}
