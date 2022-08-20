@@ -70,6 +70,7 @@ svg {
 :root {
     --fs-primary-heading: 3rem;
     --fs-secondary-heading: 2rem;
+    --fs-terciary-heading: 1.1rem;
     --fs-general: 1.4rem;
 
     --ff-general:'Raleway', sans-serif;
@@ -99,8 +100,8 @@ svg {
     text-align: center;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
 }
-
 
 .primary-heading {
     font-size: var(--fs-primary-heading);
@@ -113,13 +114,40 @@ svg {
     font-weight: var(--fw-semi);
 }
 
+.terciary-heading {
+    font-size: var(--fs-terciary-heading);
+    font-weight: var(--fw-semi);
+}
+
 .intro, .description{
     font-size:var(--fs-general);
     padding-block: 1rem;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 0.5em;
+  right: 0.5em;
+  background-color: rgb(255, 169, 89);
+  border: 1px solid black;
+  padding: 0.5rem 0.5rem;
+  border-radius: 100vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-img {
+  width: 100%;
+  max-width: 15em;
+  border-radius: 100vmax;
+  border: rgb(8, 8, 8) solid 10px;
+}
+
 .hobbies-img-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 0.5rem;
 }
@@ -127,9 +155,130 @@ svg {
   width: 12em;
 }
 
+.trinity-container {
+  padding-block: 1rem;
+}
+
+.trinity-img {
+ width: 100%;
+}
+
+.progress-bar {
+  background-color: black;
+  width: 100%;
+  height: 2em;
+  border-radius: 100vmax;
+  position: relative;
+}
+
+.progress-bar::before {
+  content: '';
+  background-color: green;
+  position: absolute;
+  padding: 0.1em 0.1em;
+  width: 100%;
+  max-width: 66%;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  border-radius: 100vmax;
+}
+
+.wishlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-block: 2rem;
+}
+
+.wishlist-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.wishlist-tool-img {
+  width: 100%;
+  max-width: 6em;
+}
+
+.fem-link {
+  text-decoration: underline;
+  color: rgb(250, 92, 92);
+  font-weight: var(--fw-semi);
+}
+
+.projects-grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding-block: 2rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 30em;
+  cursor: pointer;
+  transition: transform ease-out 0.2s;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+}
+
+.project-img, .project-info-container {
+  border: 1px solid rgba(0, 0, 0, 0.966);
+}
+
+.project-img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.project-info-container {
+  padding: 1rem;
+  background-color: white;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  text-align: center;
+}
+
+.project-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 0.5rem;
+  gap: 3rem
+}
+.github-repo, .fem-page {
+  max-width: 3.5em;
+  padding: 0.75rem;
+  border: solid 2px rgb(7, 7, 7);
+  border-radius: 100vmax;
+  cursor: pointer;
+  transition: border ease-out 100ms;
+}
+
+.github-repo:hover , .fem-page:hover {
+  border: solid 3px rgb(18, 156, 0);
+}
+
+
+
+
 /* General Styling */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  background-color: rgb(214, 244, 255);
     font-family: var(--ff-general);
+    position: relative;
 }
 
 
@@ -139,10 +288,24 @@ body {
     :root {
         --fs-primary-heading: 4rem;
         --fs-secondary-heading: 3rem;
-        --fs-general: 2rem;
+        --fs-general: 1.6rem;
     }
     .main-container {
       gap: 10rem;
+    }
+
+    .my-img {
+      width: 100%;
+      max-width: 30em;
+    }
+
+    .picrew-link, .picrew-link a {
+      font-weight: var(--fw-semi);
+    }
+
+    .picrew-link a {
+      color: rgb(238, 158, 9);
+      text-decoration: none;
     }
     
     .introduction {
@@ -167,5 +330,44 @@ body {
     .hobby-img {
       width: 40em;
     }
+
+    .trinity-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 35em;
+    }
+
+    .progress-bar {
+      max-width: 40em;
+    }
+
+    .wishlist {
+      flex-direction: row;
+      gap: 2rem;
+    }
+
+    .wishlist-wrapper {
+      display: flex;
+      gap: 3rem;
+    }
+
+    .wishlist-tool-img {
+      max-width: 8em;
+    }
+
+    .projects-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .card-container {
+      width: 100%;
+      max-width: 20em;
+    }
+
+
 
 }
