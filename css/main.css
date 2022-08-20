@@ -112,6 +112,8 @@ svg {
 .secondary-heading {
     font-size: var(--fs-secondary-heading);
     font-weight: var(--fw-semi);
+    position: relative;
+    border-bottom: 4px #B80C09 solid;
 }
 
 .terciary-heading {
@@ -127,45 +129,80 @@ svg {
 .back-to-top {
   position: fixed;
   bottom: 0.5em;
-  right: 0.5em;
-  background-color: rgb(255, 169, 89);
-  border: 1px solid black;
+  right: 1em;
+  color: white;
+  background-color: #141301;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 0px 7px 1px rgba(19, 103, 300, 1.2);
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(19, 103, 300,1.2);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(19, 103, 300,1.2);
   padding: 0.5rem 0.5rem;
   border-radius: 100vmax;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 4;
 }
 
 .my-img {
   width: 100%;
   max-width: 15em;
   border-radius: 100vmax;
-  border: rgb(8, 8, 8) solid 10px;
+  border: 5px solid white;
 }
 
-.hobbies-img-container {
+.picrew-link, .picrew-link a {
+  font-weight: var(--fw-semi);
+  opacity: 0.6;
+}
+
+
+.picrew-link a {
+  color: rgb(238, 158, 9);
+  text-decoration: none;
+}
+
+.picrew-link a:hover {
+  opacity: 1;
+}
+
+.social-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  color: #9BC53D;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+.hobbies-img-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 .hobby-img {
-  width: 12em;
+  width: 100%;
+  height: 100%;
+  max-height:25em;
 }
 
 .trinity-container {
   padding-block: 1rem;
+  width: 100%;
 }
 
 .trinity-img {
- width: 100%;
+ width: 85%;
+ max-width: 35em;
 }
 
 .progress-bar {
   background-color: black;
-  width: 100%;
+  width: 85%;
   height: 2em;
   border-radius: 100vmax;
   position: relative;
@@ -205,7 +242,7 @@ svg {
 
 .fem-link {
   text-decoration: underline;
-  color: rgb(250, 92, 92);
+  color: #4b20c0;
   font-weight: var(--fw-semi);
 }
 
@@ -230,8 +267,13 @@ svg {
   transform: scale(1.05);
 }
 
+.project-title {
+  color: black;
+  font-weight: var(--fw-semi);
+}
+
 .project-img, .project-info-container {
-  border: 1px solid rgba(0, 0, 0, 0.966);
+  border: 2px solid rgba(143, 142, 142, 0.966);
 }
 
 .project-img {
@@ -276,9 +318,10 @@ html {
 }
 
 body {
-  background-color: rgb(214, 244, 255);
+  background-color: #141301;
     font-family: var(--ff-general);
     position: relative;
+    color: white;
 }
 
 
@@ -288,8 +331,17 @@ body {
     :root {
         --fs-primary-heading: 4rem;
         --fs-secondary-heading: 3rem;
-        --fs-general: 1.6rem;
+        --fs-general: 1.4rem;
     }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 1em;
+      right: 2em;
+      border: 2px solid #ffffff;
+      padding: 0.8rem 0.8rem;
+    }
+
     .main-container {
       gap: 10rem;
     }
@@ -297,15 +349,6 @@ body {
     .my-img {
       width: 100%;
       max-width: 30em;
-    }
-
-    .picrew-link, .picrew-link a {
-      font-weight: var(--fw-semi);
-    }
-
-    .picrew-link a {
-      color: rgb(238, 158, 9);
-      text-decoration: none;
     }
     
     .introduction {
@@ -321,14 +364,14 @@ body {
     }
 
     .hobbies-img-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      place-items: center;
+      gap: 0.5rem;
     }
 
     .hobby-img {
-      width: 40em;
+        max-width: 25em;
     }
 
     .trinity-container {
@@ -336,12 +379,10 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 100%;
-      max-width: 35em;
     }
 
     .progress-bar {
-      max-width: 40em;
+      max-width: 35em;
     }
 
     .wishlist {

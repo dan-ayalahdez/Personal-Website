@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/goodreads.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -18,19 +20,19 @@
 </head>
 <body>
     <a style="color: black; text-decoration: none;" href="#header">
-    <div class="back-to-top">
+    <div class="back-to-top" title="Back to top">
         <ion-icon name="caret-up-outline"></ion-icon>
     </div>
     </a>
 
     <header id="header">
-        <div class="header-container" >
+        <div class="header-container">
             <h1 class="title">Daniel Ayala</h1>
             <nav class="navbar">
                 <ul class="nav-list" role="list">
-                    <li><a class="navbar-link" href="#aboutme" id="">About Me</a></li>
-                    <li><a class="navbar-link" href="#learning" id="">Learning</a></li>
-                    <li><a class="navbar-link" href="#projects" id="">FEM Projects</a></li>
+                    <li><a class="navbar-link" href="#aboutme">About Me</a></li>
+                    <li><a class="navbar-link" href="#learning">Learning</a></li>
+                    <li><a class="navbar-link" href="#projects">FEM Projects</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,7 +45,7 @@
                 <div class="img-container">
                     <figure>
                         <img class="my-img" src="./img/my_avatar.png" alt="An avatar of Daniel Ayala">
-                        <figcaption class="picrew-link" style="padding-block: 0.5rem;">Made with <a href="https://picrew.me/image_maker/1139337/">Picrew</a></figcaption>
+                        <figcaption class="picrew-link" style="padding-block: 0.5rem;">Made with <a target="_blank" href="https://picrew.me/image_maker/1139337/">Picrew</a></figcaption>
                     </figure>
 
                 </div>
@@ -51,6 +53,12 @@
                     <h2 class="primary-heading">Hello!</h2>
                     <p class="intro">I'm Daniel, im learning HTML and CSS, planning to learn JavaScript in a near future. I aspire to be a Web Developer some day.<br>
                        This is my personal website, take a look around :^)</p>
+                    <div class="social-container">
+                        <a target="_blank" href="https://github.com/dan-ayalahdez"><ion-icon class="social-icon" name="logo-github"></ion-icon></a>
+                        <a target="_blank" href="https://www.instagram.com/alex.ooz/"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/da-ayalahdez/"><ion-icon class="social-icon" name="logo-linkedin"></ion-icon></a>
+                        <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=dan.ayalahdez@gamil.com"><ion-icon class="social-icon" name="mail-outline"></ion-icon></a>
+                    </div>
                 </div>
             </article>
 
@@ -60,7 +68,7 @@
                     in late August 2022, starting with youtube videos, and since then i've learned a lot of new things, altough there's still much more to discover!</p>
                 <p class="description">Some things i like are reading, music, art and photgraphy.</p>
                 <div class="hobbies-img-container">
-      
+                    <img class="hobby-img" src="./img/hobby-img1.jpg" alt="Some picture about my hobbies">
             <div id="gr_custom_widget_1660953046">
                 <div class="gr_custom_container_1660953046">
           <h2 class="gr_custom_header_1660953046">
@@ -88,15 +96,14 @@
       
             </div>
             <script src="https://www.goodreads.com/review/custom_widget/146610431.Daniel's%20bookshelf:%20currently-reading?cover_position=middle&cover_size=medium&num_books=1&order=a&shelf=currently-reading&show_author=1&show_cover=1&show_rating=0&show_review=0&show_tags=0&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=1&widget_id=1660953046&widget_text_color=000000&widget_title_size=medium&widget_width=thin" type="text/javascript" charset="utf-8"></script>
-                    <!-- <img class="hobby-img" src="//unsplash.it/150/150" alt="Some picture about my hobbies">
-                    <img class="hobby-img" src="//unsplash.it/150/150" alt="Some picture about my hobbies"> -->
+                    <img class="hobby-img" src="./img/hobby-img2.jpg" alt="Some picture about my hobbies">
                 </div>
             </article>
 
             <article class="learning" id="learning">
                 <h2 class="secondary-heading">Learning</h2>
                     <div>
-                        <p class="description">For now, im focusing on the holy trinity.</p>
+                        <p class="description">For now, im focusing on the holy trinity. HTML and CSS as a foundation, i will be starting with JavaScript in a few weeks</p>
                         <div class="trinity-container">
                             <img class="trinity-img" src="/img/trinity.png" alt="Holy trinity of Web Dev">
                             <div class="progress-bar"></div>
@@ -111,7 +118,7 @@
                                 <li><img src="./img/bootstrap-logo-shadow.png" title="Bootstrap" alt="Bootstrap icon" class="wishlist-tool-img"></li>
                             </div>
                             <div class="wishlist-wrapper">
-                                <li><img src="./img/wordpress.svg" alt="Wordpress icon" title="Wordpress" class="wishlist-tool-img"></li>
+                                <li><img src="./img/wordpress.png" alt="Wordpress icon" title="Wordpress" class="wishlist-tool-img"></li>
                                 <li><img src="./img/nodejs-icon-logo.svg" alt="NodeJS icon" title="Node JS" class="wishlist-tool-img"></li>
                             </div>
                         </ul>
@@ -129,10 +136,10 @@
                     <div class="card-container">
                         <div class="project-img-container"><img class="project-img" src="./img/order-project.jpg" alt="Order Summary Project Photo"></div>
                         <div class="project-info-container">
-                            <h3 class="terciary-heading">Order Summary Component</h3>
+                            <h3 class="project-title">Order Summary Component</h3>
                             <div class="project-links-container">
-                                <a href=""><img class="github-repo" src="./img/github.png" alt="Github Repository link"></a>
-                                <a href=""><img class="fem-page" src="./img/frontendmentor.png" alt="FrontEnd Mentor link" ></a>
+                                <a target="_blank" href="https://github.com/dan-ayalahdez/Order-Summary-Solution"><img class="github-repo" src="./img/github.png" alt="Github Repository link"></a>
+                                <a target="_blank" href="https://www.frontendmentor.io/solutions/order-box-solution-14P5tTM4jI"><img class="fem-page" src="./img/frontendmentor.png" alt="FrontEnd Mentor link" ></a>
                             </div>
                         </div>
                     </div>
@@ -140,10 +147,10 @@
                     <div class="card-container">
                         <div class="project-img-container"><img class="project-img" src="./img/nft-project.jpg" alt="Order Summary Project Photo"></div>
                         <div class="project-info-container">
-                            <h3 class="terciary-heading">NFT Preview Card Component</h3>
+                            <h3 class="project-title">NFT Preview Card Component</h3>
                             <div class="project-links-container">
-                                <a href=""><img class="github-repo" src="./img/github.png" alt="Github Repository link"></a>
-                                <a href=""><img class="fem-page" src="./img/frontendmentor.png" alt="FrontEnd Mentor link" ></a>
+                                <a target="_blank" href="https://github.com/dan-ayalahdez/ntf-card-project-solution"><img class="github-repo" src="./img/github.png" alt="Github Repository link"></a>
+                                <a target="_blank" href="https://www.frontendmentor.io/solutions/solution-for-the-nft-card-project-Z6cf2CD6Ti"><img class="fem-page" src="./img/frontendmentor.png" alt="FrontEnd Mentor link" ></a>
                             </div>
                         </div>
                     </div>
@@ -151,10 +158,10 @@
                     <div class="card-container">
                         <div class="project-img-container"><img class="project-img" src="./img/fourcard-project.jpg" alt="Order Summary Project Photo"></div>
                         <div class="project-info-container">
-                            <h3 class="terciary-heading">Four Card Feature Section</h3>
+                            <h3 class="project-title">Four Card Feature Section</h3>
                             <div class="project-links-container">
-                                <a href=""><img class="github-repo" src="./img/github.png" alt="Github Repository link"></a>
-                                <a href=""><img class="fem-page" src="./img/frontendmentor.png" alt="FrontEnd Mentor link" ></a>
+                                <a target="_blank" href="https://github.com/dan-ayalahdez/Four-card-project"><img class="github-repo" src="./img/github.png" alt="Github Repository link"></a>
+                                <a target="_blank" href="https://www.frontendmentor.io/solutions/four-card-project-solution-3WYbH9hGxV"><img class="fem-page" src="./img/frontendmentor.png" alt="FrontEnd Mentor link" ></a>
                             </div>
                         </div>
                     </div>
@@ -163,10 +170,10 @@
                     <div class="card-container">
                         <div class="project-img-container"><img class="project-img" src="./img/statscard-project.jpg" alt="Order Summary Project Photo"></div>
                         <div class="project-info-container">
-                            <h3 class="terciary-heading">Stats Preview Card Component</h3>
+                            <h3 class="project-title">Stats Preview Card Component</h3>
                             <div class="project-links-container">
-                                <a href=""><img class="github-repo" src="./img/github.png" alt="Github Repository link"></a>
-                                <a href=""><img class="fem-page" src="./img/frontendmentor.png" alt="FrontEnd Mentor link" ></a>
+                                <a target="_blank" href="https://github.com/dan-ayalahdez/stats-project-solution"><img class="github-repo" src="./img/github.png" alt="Github Repository link"></a>
+                                <a target="_blank" href="https://www.frontendmentor.io/solutions/stats-card-solution-a9sjL7drj0"><img class="fem-page" src="./img/frontendmentor.png" alt="FrontEnd Mentor link" ></a>
                             </div>
                         </div>
                     </div>
@@ -174,10 +181,10 @@
                     <div class="card-container">
                         <div class="project-img-container"><img class="project-img" src="./img/huddle-landing-project.jpg" alt="Order Summary Project Photo"></div>
                         <div class="project-info-container">
-                            <h3 class="terciary-heading">Huddle landing page</h3>
+                            <h3 class="project-title">Huddle landing page</h3>
                             <div class="project-links-container">
-                                <a href=""><img class="github-repo" src="./img/github.png" alt="Github Repository link"></a>
-                                <a href=""><img class="fem-page" src="./img/frontendmentor.png" alt="FrontEnd Mentor link" ></a>
+                                <a target="_blank" href="https://github.com/dan-ayalahdez/Huddle-Landing-Page"><img class="github-repo" src="./img/github.png" alt="Github Repository link"></a>
+                                <a target="_blank" href="https://www.frontendmentor.io/solutions/huddle-landing-page-solution-uZg8nQHGlw"><img class="fem-page" src="./img/frontendmentor.png" alt="FrontEnd Mentor link" ></a>
                             </div>
                         </div>
                     </div>
@@ -185,10 +192,10 @@
                     <div class="card-container">
                         <div class="project-img-container"><img class="project-img" src="./img/testimonials -project.jpg" alt="Order Summary Project Photo"></div>
                         <div class="project-info-container">
-                            <h3 class="terciary-heading">Testimonials Grid Section</h3>
+                            <h3 class="project-title">Testimonials Grid Section</h3>
                             <div class="project-links-container">
-                                <a href=""><img class="github-repo" src="./img/github.png" alt="Github Repository link"></a>
-                                <a href=""><img class="fem-page" src="./img/frontendmentor.png" alt="FrontEnd Mentor link" ></a>
+                                <a target="_blank" href="https://github.com/dan-ayalahdez/testimonials-grid-project"><img class="github-repo" src="./img/github.png" alt="Github Repository link"></a>
+                                <a target="_blank" href="https://www.frontendmentor.io/solutions/testimonals-grid-solution-edq9JulTk9"><img class="fem-page" src="./img/frontendmentor.png" alt="FrontEnd Mentor link" ></a>
                             </div>
                         </div>
                     </div>
@@ -200,7 +207,7 @@
     <footer>
         <div class="footer-container">
             <h1 class="terciary-heading">About this site</h1>
-            <p>Made by <a href="https://github.com/dan-ayalahdez">Daniel Ayala</a> as a personal project</p>
+            <p>Made as a personal project to put to use all my learning in HTML and CSS</p>
         </div>
     </footer>
     

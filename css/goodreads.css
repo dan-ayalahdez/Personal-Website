@@ -1,11 +1,14 @@
 .gr_custom_container_1660953046 {
     /* customize your Goodreads widget container here*/
+    display: block;
     border: 1px solid gray;
     border-radius:10px;
     padding: 10px 5px 10px 5px;
     background-color: #FFFFFF;
     color: #000000;
-    max-width: 20em;
+    width: 100%;
+    height: 100%;
+    max-height:25em;
   }
   .gr_custom_header_1660953046 {
     /* customize your Goodreads header here*/
@@ -50,4 +53,10 @@
   .gr_custom_rating_1660953046 {
     /* customize your rating stars here */
     float: right;
+  }
+
+  @media (min-width: 50em) {
+    .gr_custom_container_1660953046 {
+      max-width: 35em;
+    }
   }

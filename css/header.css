@@ -4,6 +4,7 @@
     --fs-title: 4.5rem;
 
     --ff-general:'Raleway', sans-serif;
+    --ff-title: 'Sunflower', sans-serif;
 
     --fw-regular: 400;
     --fw-semi: 600;
@@ -22,10 +23,10 @@
     align-items: center;
     justify-content: space-between;
     padding-block: 1rem;
-    border-bottom: 3px dotted black;
 }
 
 .title {
+    font-family: var(--ff-title);
     font-size: var(--fs-title);
     font-weight: var(--fw-bold);
     text-align: center;
@@ -35,11 +36,36 @@
     font-size: var(--fs-nav-links);
     font-weight: var(--fw-semi);
     text-decoration: none;
-    color: black;
-    transition: color ease-out 0.3s;
+    transition: color ease-out 0.2s;
+    animation-name: color-change;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); 
+}
+
+@keyframes color-change {
+    0% {
+        color: rgb(0, 63, 145);
+	}
+	25% {
+		color: #744FC6;
+	}
+	50% {
+		color: #003F91;
+	}
+	75% {
+		color: #744FC6;
+	}
+	100% {
+		color: #003F91;
+	}
 }
 
 /* General Styling */
+header {
+    background-image: url();
+}
 
 .nav-list {
     display: flex;
@@ -47,18 +73,11 @@
     padding-block: 1rem;
 }
 
-.navbar-link:hover {
-    color: rgb(33, 20, 218);
-}
-
-.navbar-link:visited {
-    color: black;
-}
 
 
 @media (min-width: 50em) {
     :root {
-        --fs-nav-links: 1.2rem;
+        --fs-nav-links: 1.3rem;
         --fs-title: 3.5rem;
     }
 
